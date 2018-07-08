@@ -69,8 +69,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="43" selection-start-line="43" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="720">
+              <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -177,7 +177,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
@@ -205,8 +205,8 @@
   <component name="PropertiesComponent">
     <property name="ToolWindowDocumentation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/Study/建模/加密-Pyth0n人工智能进阶篇/Test" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -321,19 +321,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1964" height="1166" extended-state="6" />
+    <frame x="-7" y="-7" width="1985" height="1166" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="TODO" order="7" weight="0.32860893" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.503937" side_tool="true" weight="0.3687873" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Python Console" order="9" sideWeight="0.7166998" side_tool="true" visible="true" weight="0.27806926" />
+      <window_info anchor="right" id="Python Console" order="9" sideWeight="0.71769387" side_tool="true" visible="true" weight="0.1530877" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Terminal" order="8" weight="0.3296588" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4893204" visible="true" weight="0.17681007" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4893204" visible="true" weight="0.0991178" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3296588" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.2833002" visible="true" weight="0.27806926" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.28230616" visible="true" weight="0.1530877" />
       <window_info id="Structure" order="1" sideWeight="0.5059642" side_tool="true" weight="0.17742783" />
       <window_info id="Favorites" order="2" sideWeight="0.5106796" side_tool="true" weight="0.1769958" />
       <window_info anchor="right" id="Debug" order="6" weight="0.22983193" />
@@ -350,24 +351,24 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.50490195" side_tool="true" weight="0.2529412" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49509802" visible="true" weight="0.25588235" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="TODO" order="7" weight="0.3289916" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="8" visible="true" weight="0.35135135" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" x="0" y="0" width="563" height="1258" id="Documentation" order="5" weight="0.32963875" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Terminal" order="8" weight="0.32983193" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.32983193" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Debug" order="6" weight="0.3987395" />
-      <window_info id="Favorites" order="2" sideWeight="0.50490195" side_tool="true" weight="0.2529412" />
+      <window_info anchor="bottom" id="Python Console" order="8" visible="true" weight="0.35135135" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="43" selection-start-line="43" selection-end-line="43" selection-end-column="41" />
+        <state relative-caret-position="720">
+          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
