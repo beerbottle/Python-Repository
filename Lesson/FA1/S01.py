@@ -78,7 +78,7 @@ def num_var_perf(df, var_list, target_var, path, truncation=False):
     :param var_list:数值型变量名称列表 List类型
     :param target_var: 响应变量名称
     :param path: 保存图片的位置
-    :param truncation: 是否对数据做95%盖帽处理 默认不盖帽
+    :param truncation=False: 是否对数据做95%盖帽处理 默认不盖帽
     :return:
     """
     for var in var_list:
