@@ -21,7 +21,7 @@ def get_list_for_number_str_col(p_df, p_col_id, p_col_target):
     :param p_df: 数据集
     :param p_col_id: 主键字段名
     :param p_col_target: 目标字段名
-    :return:str_var_list- 字符型变量列表；numberVarlist- 数值型变量列表
+    :return:str_var_list: 字符型变量列表；numberVarlist- 数值型变量列表
     """
     name_of_col = list(p_df.columns)
     name_of_col.remove(p_col_target)
@@ -35,9 +35,6 @@ def get_list_for_number_str_col(p_df, p_col_id, p_col_target):
             str_var_list.remove(varName)
             num_var_list.append(varName)
 
-    # df[str_var_list].head()
-    # df[num_var_list].head()
-
     return str_var_list, num_var_list
 
 
@@ -46,7 +43,7 @@ def list2txt(p_path, p_file, p_list):
     将list保存到txt中
     :param p_path: 路径
     :param p_file: 文件名
-    :param p_list:
+    :param p_list: 要写入文件的list
     :return: 
     """
     p_file = open(p_path + '\\' + p_file, 'w')
@@ -82,6 +79,7 @@ def num_var_perf(p_df, p_var_list, p_target_var, p_path, p_truncation=False):
     :return:
     """
     for var in p_var_list:
+        # 利用NaN != NaN的特性 将所有空值排除
         valid_df = p_df.loc[p_df[var] == p_df[var]][[var, p_target_var]]
         rec_perc = 100.0*valid_df.shape[0] / p_df.shape[0]
         rec_perc_fmt = "%.2f%%" % rec_perc
@@ -93,22 +91,23 @@ def num_var_perf(p_df, p_var_list, p_target_var, p_path, p_truncation=False):
         value_min = '%.2e' % desc['min']
         # 样本权重
         bad_df = valid_df.loc[valid_df[p_target_var] == 1][var]
-        nobad_df = valid_df.loc[valid_df[p_target_var] == 0][var]
+        good_df = valid_df.loc[valid_df[p_target_var] == 0][var]
         bad_weight = 100.0*np.ones_like(bad_df)/bad_df.size
-        good_weight = 100.0*np.ones_like(nobad_df)/nobad_df.size
+        good_weight = 100.0*np.ones_like(good_df)/good_df.size
         # 是否用95分位数进行盖帽
         if p_truncation:
             per95 = np.percentile(valid_df[var], 95)
             bad_df = bad_df.map(lambda x: min(x, per95))
-            nobad_df = nobad_df.map(lambda x: min(x, per95))
+            good_df = good_df.map(lambda x: min(x, per95))
         # 画图
         fig, ax = pyplot.subplots()
         ax.hist(bad_df, weights=bad_weight, alpha=0.3, label='bad')
-        ax.hist(nobad_df, weights=good_weight, alpha=0.3, label='noBad')
-        title_text = var \
-                     + ' \n' \
-                     + 'VlidePerc:' + rec_perc_fmt \
-                     + ';Mean:' + value_mean \
+        ax.hist(good_df, weights=good_weight, alpha=0.3, label='noBad')
+        title_text = var + '\n' \
+                     + 'VlidePerc:' \
+                     + rec_perc_fmt \
+                     + ';Mean:' \
+                     + value_mean \
                      + ';Per50:' + value_per50 \
                      + ';Std:' + value_std \
                      + ';\n' \
@@ -134,6 +133,7 @@ def str_var_pref(p_df, p_var_list, p_target_var, p_path):
     :return:
     """
     for var in p_var_list:
+        # 利用None != None的特性 将所有空值排除
         valid_df = p_df.loc[p_df[var] == p_df[var]][[var, p_target_var]]
         rec_perc = 100.0*valid_df.shape[0] / p_df.shape[0]
         rec_perc_fmt = "%.2f%%" % rec_perc
@@ -141,10 +141,15 @@ def str_var_pref(p_df, p_var_list, p_target_var, p_path):
         dict_bad_rate = {}
         for v in set(valid_df[var]):
             v_df = valid_df.loc[valid_df[var] == v]
+            # 每个类别数量占比
             dict_freq[v] = 1.0*v_df.shape[0] / p_df.shape[0]
+            # 每个类别坏客户占比
             dict_bad_rate[v] = sum(v_df[p_target_var] * 1.0) / v_df[p_target_var].shape[0]
+
         if p_df.loc[p_df[var] != p_df[var]][p_target_var].shape[0] > 0:
+            # 当前变量缺失率统计
             dict_freq['missValue'] = 1.0 - valid_df.shape[0] / p_df.shape[0]
+            # 当前变量缺失率值中坏商户占比
             dict_bad_rate['missValue'] = \
                 sum(p_df.loc[p_df[var] != p_df[var]][p_target_var]) \
                 / p_df.loc[p_df[var] != p_df[var]][p_target_var].shape[0]
@@ -168,7 +173,7 @@ def makeup_miss_for_num(p_df, p_var_list, p_method):
     按照指定的方法对数据集的数字类型数据进行填充
     :param p_df:数据集
     :param p_var_list:数字型变量名称list
-    :param p_method:填充方法 'mean' 'RANDOM' 'PERC50'
+    :param p_method:填充方法 'MEAN' 'RANDOM' 'PERC50'
     :return:已经填充的数据集
     """
     # df=dataAll
@@ -177,8 +182,9 @@ def makeup_miss_for_num(p_df, p_var_list, p_method):
     # col= 'age1'
 
     df_makeup_miss = p_df.copy()
-    if p_method.upper() not in ['MEAN', 'RANDOM', 'PERC50']:
-        print('Please specify the correct treatment method for missing continuous variable:Mean or Random or PERC50!')
+    if p_method.upper() not in ['MEAN', 'RANDOM', 'PERC50', "3STDCAP"]:
+        print('Please specify the correct treatment method for missing continuous variable:Mean or Random or ' +
+              'PERC50 or 3STDCAP!')
         return df_makeup_miss
 
     for col in set(p_var_list):
@@ -190,9 +196,10 @@ def makeup_miss_for_num(p_df, p_var_list, p_method):
 
         desc_state = valid_df[col].describe()
         value_mu = desc_state['mean']
-        # std = desc_state['std']
         # max = desc_state['max']
         value_perc50 = desc_state['50%']
+        # std = desc_state['std']
+        # value_3stdCap = value_mu + 3*std
         # 盖帽
         # if max > mu+3*std:
         #     for i in list(valid_df.index):
@@ -224,6 +231,10 @@ def makeup_miss_for_str(p_df, p_str_var_list, p_method):
     """
     df_makeup_miss = p_df.copy()
 
+    if p_method.upper() not in ['MODE', 'RANDOM']:
+        print('Please specify the correct treatment method for missing continuous variable:MODE or Random!')
+        return df_makeup_miss
+
     for var in p_str_var_list:
         valid_df = df_makeup_miss.loc[df_makeup_miss[var] == df_makeup_miss[var]][[var]]
 
@@ -248,7 +259,7 @@ def makeup_miss_for_str(p_df, p_str_var_list, p_method):
     return df_makeup_miss
 
 
-def encoder(p_df, p_col, p_target):
+def density_encoder(p_df, p_col, p_target):
     """
     对类别变量进行密度编码 包括Nan
     :param p_df: 数据集
