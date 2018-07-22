@@ -7,6 +7,9 @@
 # clear_index_html   恢复index.html初始状态
 # add_index_html      将索引写入index.html文件
 
+import os
+
+
 def create_frame(p_path, p_file_name):
     """
     生成frame结构，便于查看
@@ -62,7 +65,6 @@ def add_index_html(p_path, p_file_name, p_var_name):
         f.write("<a href='"+p_var_name+".png' target='content'>"+p_var_name+"</a></br>\n")
 
 
-
 def list2txt(p_path, p_file, p_list):
     """
     将list保存到txt中
@@ -101,9 +103,6 @@ def create_path(p_path):
     :param p_path:文件夹路径 
     :return: 
     """
-    # 引入模块
-    import os
-
     # 去除首位空格
     path = p_path.strip()
     # 去除尾部 \ 符号
@@ -112,10 +111,10 @@ def create_path(p_path):
     # 判断路径是否存在
     # 存在     True
     # 不存在   False
-    isExists = os.path.exists(path)
+    is_exists = os.path.exists(path)
 
     # 判断结果
-    if not isExists:
+    if not is_exists:
         # 如果不存在则创建目录
         # 创建目录操作函数
         os.makedirs(path)

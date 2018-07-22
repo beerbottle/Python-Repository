@@ -3,6 +3,13 @@
 # get_list_for_number_str_col 将dataframe中的字段名称分为字符型、数值型两个list返回
 # num_var_perf    探索数值型变量的分布
 # str_var_pref    探索字符型变量的分布
+# time_window_selection   根据给定的时间窗口 进行累计计数 并返回
+
+import numpy as np
+import pandas as pd
+from matplotlib import pyplot
+import chinaPnr.utility.others as u_others
+
 
 def get_list_for_number_str_col(p_df, p_col_id, p_col_target):
     """
@@ -12,7 +19,6 @@ def get_list_for_number_str_col(p_df, p_col_id, p_col_target):
     :param p_col_target: 目标字段名
     :return:str_var_list: 字符型变量列表；numberVarlist- 数值型变量列表
     """
-    import numpy as np
 
     name_of_col = list(p_df.columns)
     name_of_col.remove(p_col_target)
@@ -39,10 +45,6 @@ def num_var_perf(p_df, p_var_list, p_target_var, p_path, p_truncation=False):
     :param p_truncation: 是否对数据做95%盖帽处理 默认不盖帽
     :return:
     """
-    import numpy as np
-    from matplotlib import pyplot
-    import chinaPnr.utility.others as u_others
-
     frame_name = "num"
 
     u_others.create_frame(p_path, frame_name)
@@ -103,9 +105,6 @@ def str_var_pref(p_df, p_var_list, p_target_var, p_path):
     :param p_path: 保存图片的位置
     :return:
     """
-    import pandas as pd
-    from matplotlib import pyplot
-    import chinaPnr.utility.others as u_others
 
     frame_name = "str"
     u_others.create_frame(p_path, frame_name)
@@ -146,3 +145,91 @@ def str_var_pref(p_df, p_var_list, p_target_var, p_path):
         pyplot.close(1)
         u_others.add_index_html(p_path, frame_name, var)
     print("function str_var_pref finished!...................")
+
+
+def time_window_selection(p_df, p_daysCol, p_time_windows):
+    """
+    根据给定的时间窗口 进行累计计数 并返回
+    :param p_df: 数据集
+    :param p_daysCol: 天数所在的列
+    :param p_time_windows: 时间窗口 为list 如[10,20,30]
+    :return:
+    """
+
+    freq_tw = {}
+    for tw in p_time_windows:
+        freq = sum(p_df[p_daysCol].apply(lambda x: int(x <= tw)))
+        freq_tw[tw] = freq
+
+    print("function time_window_selection finished!...................")
+    return freq_tw
+
+
+def missing_categorial_for_1(p_df, p_var):
+    """
+    为某一个类别型变量统计缺失值
+    :param p_df:
+    :param p_var:
+    :return:
+    """
+    missing_vals = p_df[p_var].map(lambda x: int(x != x))
+    print("function missing_categorial_for_1 finished!...................")
+    return sum(missing_vals) * 1.0 / p_df.shape[0]
+
+
+def missing_continuous_for_1(p_df, p_var):
+    """
+    为某一个数值型变量统计缺失值
+    :param p_df:
+    :param p_var:
+    :return:
+    """
+    missing_vals = p_df[p_var].map(lambda x: int(np.isnan(x)))
+    print("function missing_continuous_for_1 finished!...................")
+    return sum(missing_vals) * 1.0 / p_df.shape[0]
+
+
+def missing_categorial(p_df, p_var_list, p_file=""):
+    """
+    为df中所有类别型变量统计缺失值
+    :param p_df:
+    :param p_var_list:  类别型变量的list
+    :param p_file: 保存文件名称
+    :return:
+    """
+    dict_mis = {}
+    for v in p_var_list:
+        dict_mis[v] = missing_categorial_for_1(p_df=p_df, p_var=v)
+
+    if len(p_file.strip()) > 0:
+        f = open(p_file, 'w')
+        f.write(str(dict_mis))
+        f.close()
+
+    print("function missing_categorial finished!...................")
+    return dict_mis
+
+
+def missing_continuous(p_df, p_var_list, p_file=""):
+    """
+    为df中所有连续型变量统计缺失值
+    :param p_df:
+    :param p_var_list: 连续型变量的list
+    :param p_file: 保存文件名称
+    :return:
+    """
+    dict_mis = {}
+    for v in p_var_list:
+        dict_mis[v] = missing_continuous_for_1(p_df=p_df, p_var=v)
+
+    if len(p_file.strip()) > 0:
+        f = open(p_file, 'w')
+        f.write(str(dict_mis))
+        f.close()
+
+    print("function missing_continuous finished!...................")
+    return dict_mis
+
+
+
+

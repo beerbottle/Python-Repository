@@ -9,10 +9,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FA1$S01__1_.coverage" NAME="S01 (1) Coverage Results" MODIFIED="1522495323350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FA1$S01.coverage" NAME="S01 Coverage Results" MODIFIED="1521989323503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L1" />
-  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -35,32 +31,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Lesson_ACard.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lesson_ACard.py">
+      <file leaf-file-name="modify.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chinaPnr/utility/modify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="64" column="56" lean-forward="true" selection-start-line="48" selection-end-line="64" selection-end-column="56" />
+            <state relative-caret-position="537">
+              <caret line="216" selection-start-line="216" selection-end-line="216" />
               <folding>
-                <element signature="e#46#55#0" expanded="true" />
+                <element signature="e#194#207#0" expanded="true" />
+                <element signature="e#416#1051#0" />
+                <element signature="e#1154#2343#0" />
+                <element signature="e#2444#2954#0" />
+                <element signature="e#2971#4321#0" />
+                <element signature="e#3778#4481#0" />
+                <element signature="e#5192#5483#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modify.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chinaPnr/utility/modify.py">
+      <file leaf-file-name="explore.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chinaPnr/utility/explore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1069">
-              <caret line="125" selection-start-line="125" selection-end-line="125" selection-end-column="66" />
+            <state relative-caret-position="246">
+              <caret line="212" column="22" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="22" />
+              <folding>
+                <element signature="e#174#192#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="explore.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chinaPnr/utility/explore.py">
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chinaPnr/utility/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="142" column="37" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
+            <state relative-caret-position="273">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,19 +76,12 @@
       <file leaf-file-name="others.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chinaPnr/utility/others.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="1439">
+              <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#1447#1742#0" />
+                <element signature="e#1802#1914#1" />
+                <element signature="e#2160#2478#0" />
               </folding>
             </state>
           </provider>
@@ -89,10 +90,31 @@
       <file leaf-file-name="Lesson_Pandas.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson_Pandas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="944">
-              <caret line="60" column="1" selection-start-line="60" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="320">
+              <caret line="349" selection-start-line="349" selection-end-line="349" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson_ACard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson_ACard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
               <folding>
-                <element signature="e#387#405#0" expanded="true" />
+                <element signature="e#46#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="72" selection-start-line="72" selection-end-line="75" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,14 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>name</find>
-      <find>max</find>
-      <find>Churn</find>
-      <find>getList_for_number_str_col</find>
-      <find>nameOfCol</find>
-      <find>pathExploreSult</find>
-      <find>figSavePath</find>
-      <find>TargetVar</find>
       <find>valuePerc50</find>
       <find>listDict</find>
       <find>number_var_list</find>
@@ -139,6 +153,14 @@
       <find>1111</find>
       <find>txt2list</find>
       <find>no</find>
+      <find>filn</find>
+      <find>p_df</find>
+      <find>filln</find>
+      <find>groupby</find>
+      <find>assign_group</find>
+      <find>p_max_bin</find>
+      <find>makeup_miss_for_str</find>
+      <find>missing_continuous</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -160,8 +182,10 @@
       <replace>col_target</replace>
       <replace>sample_df</replace>
       <replace>data_all</replace>
+      <replace>temp_df</replace>
     </replaceStrings>
   </component>
+  <component name="GOROOT" path="E:/Soft/goLand/go1.10.1.windows-amd64/go" />
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -179,13 +203,14 @@
         <option value="$PROJECT_DIR$/Lesson_Draw.py" />
         <option value="$PROJECT_DIR$/ChinaPnr/Utility.py" />
         <option value="$PROJECT_DIR$/chinaPnr/utility/sample.py" />
-        <option value="$PROJECT_DIR$/chinaPnr/utility/model.py" />
         <option value="$PROJECT_DIR$/chinaPnr/utility/assess.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/chinaPnr/utility/modify.py" />
         <option value="$PROJECT_DIR$/chinaPnr/utility/others.py" />
-        <option value="$PROJECT_DIR$/Lesson_ACard.py" />
+        <option value="$PROJECT_DIR$/chinaPnr/utility/test2.py" />
+        <option value="$PROJECT_DIR$/chinaPnr/utility/modify.py" />
         <option value="$PROJECT_DIR$/chinaPnr/utility/explore.py" />
+        <option value="$PROJECT_DIR$/chinaPnr/utility/model.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Lesson_ACard.py" />
       </list>
     </option>
   </component>
@@ -195,18 +220,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="2482" />
-    <option name="height" value="1458" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="2485" />
+    <option name="height" value="1460" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,18 +252,25 @@
               <item name="chinaPnr" type="462c0819:PsiDirectoryNode" />
               <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FA1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ToolWindowDocumentation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="E:/Study/建模/000 小象 田野 金融数据分析/资料/代码/第三讲_代码" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -259,7 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.S01 (1)">
+  <component name="RunManager" selected="Python.S01">
     <configuration name="S01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FA1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -337,15 +371,6 @@
       <option name="OPTIONS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -375,24 +400,15 @@
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="FA1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <module name="FA1" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -415,15 +431,14 @@
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="FA1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FA1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -432,77 +447,50 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="FA1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FA1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="FA1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FA1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
+      <module name="FA1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FA1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
@@ -513,15 +501,9 @@
       <envs />
     </configuration>
     <list>
-      <item itemvalue="Python.S01 (1)" />
       <item itemvalue="Python.S01" />
+      <item itemvalue="Python.S01 (1)" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.S01" />
-        <item itemvalue="Python.S01 (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -553,13 +535,14 @@
       <window_info anchor="right" id="Event Log" order="5" sideWeight="0.50347567" side_tool="true" weight="0.32969886" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Python Console" order="6" sideWeight="0.49652433" visible="true" weight="0.33904466" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" sideWeight="0.49652433" visible="true" weight="0.3406157" />
       <window_info anchor="bottom" id="Run" order="4" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.081516095" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17185877" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="0" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32969216" />
+      <window_info anchor="right" id="SciView" order="0" weight="0.23260644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
@@ -569,7 +552,6 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,10 +567,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="54" />
+      <option name="time" value="59" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Lesson_Pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="60" column="1" selection-start-line="60" selection-end-line="60" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/L1/S1.py" />
     <entry file="file://$PROJECT_DIR$/L1/bank_attrition.py" />
     <entry file="file://$PROJECT_DIR$/L1/S1.py" />
@@ -603,22 +592,7 @@
     <entry file="file://$PROJECT_DIR$/L1/bank_attrition.py" />
     <entry file="file://$PROJECT_DIR$/L1/bank_attrition.py" />
     <entry file="file://$PROJECT_DIR$/S1.py" />
-    <entry file="uml://JavaScript-modules-diagram/D:/Python WorkSpace/Lesson/FA1">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID />
-          <OriginalElement />
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
+    <entry file="uml://JavaScript-modules-diagram/D:/Python WorkSpace/Lesson/FA1" />
     <entry file="file://$PROJECT_DIR$/L1/S1.py" />
     <entry file="file://$PROJECT_DIR$/.idea/FA1.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,17 +607,10 @@
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/457808776/builtins.py" />
     <entry file="file://$PROJECT_DIR$/L1/bank_attrition.py" />
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/457808776/numpy/core/umath.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="992">
-          <caret line="1667" selection-start-line="1667" selection-end-line="1667" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py" />
     <entry file="file://$PROJECT_DIR$/03 outlier and missing value.py" />
     <entry file="file://$PROJECT_DIR$/qqq.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/457808776/builtins.py" />
     <entry file="file://$PROJECT_DIR$/02 outlier and missing value.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
@@ -680,76 +647,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/S01.py" />
     <entry file="file://$PROJECT_DIR$/chinaPnr/utility.py" />
-    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/assess.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/sample.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson_Pandas.py">
+    <entry file="file://$PROJECT_DIR$/Result/number_var_list.txt" />
+    <entry file="file://$PROJECT_DIR$/Result/string_var_list.txt" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/457808776/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="60" column="1" selection-start-line="60" selection-end-line="60" selection-end-column="1" />
+        <state relative-caret-position="327">
+          <caret line="3674" column="8" selection-start-line="3674" selection-start-column="8" selection-end-line="3674" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/others.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1439">
+          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
           <folding>
-            <element signature="e#387#405#0" expanded="true" />
+            <element signature="e#1447#1742#0" />
+            <element signature="e#1802#1914#1" />
+            <element signature="e#2160#2478#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Result/number_var_list.txt">
+    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Result/string_var_list.txt">
+    <entry file="file://$PROJECT_DIR$/Lesson_Pandas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="320">
+          <caret line="349" selection-start-line="349" selection-end-line="349" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="393">
+          <caret line="72" selection-start-line="72" selection-end-line="75" selection-end-column="65" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/model.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/others.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chinaPnr/utility/modify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1069">
-          <caret line="125" selection-start-line="125" selection-end-line="125" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/explore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="142" column="37" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
+        <state relative-caret-position="537">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+          <folding>
+            <element signature="e#194#207#0" expanded="true" />
+            <element signature="e#416#1051#0" />
+            <element signature="e#1154#2343#0" />
+            <element signature="e#2444#2954#0" />
+            <element signature="e#2971#4321#0" />
+            <element signature="e#3778#4481#0" />
+            <element signature="e#5192#5483#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson_ACard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="64" column="56" lean-forward="true" selection-start-line="48" selection-end-line="64" selection-end-column="56" />
+        <state relative-caret-position="131">
+          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
           <folding>
             <element signature="e#46#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinaPnr/utility/explore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="212" column="22" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="22" />
+          <folding>
+            <element signature="e#174#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
