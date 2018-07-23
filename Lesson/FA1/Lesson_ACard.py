@@ -70,12 +70,8 @@ if __name__ == '__main__':
     u_modify.makeup_miss_for_str(p_df=data_all, p_str_var_list=string_var_list, p_method="MODE")
 
     # 浓度编码
-    u_modify.density_encoder(data_all, string_var_list, col_target)
+    # u_modify.density_encoder(data_all, string_var_list, col_target)
 
     # 卡方分箱
-    cutoff_points = u_model.chi_merge_max_interval(data_all, "day", col_target, 5)
-    var_cutoff = {}
-    var_cutoff["day"] = cutoff_points
-    data_all["day"] = data_all["day"].map(lambda x: u_model.assign_bin(x, cutoff_points))
-
+    u_model.chi2_bin(data_all, number_var_list, col_target)
 

@@ -66,6 +66,7 @@ def AssignBin(x, p_cutoff_points, special_attribute=[]):
                 return 'Bin {}'.format(i+1)
 
 pd1 = pd.read_csv("data1.csv")
+
 pd1.head(5)
 pd_test = chi_merge_max_interval(pd1, "day", "chrun", 5)
 

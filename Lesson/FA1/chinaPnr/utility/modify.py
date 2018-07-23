@@ -193,26 +193,8 @@ def standard_std(p_df, p_var, p_target):
     return
 
 
-def bin_best_ks(p_df, p_var, p_target):
-    """
-    ks分箱法 不推荐
-    :param p_df:
-    :param p_var:
-    :param p_target:
-    :return:
-    """
-    return
 
 
-def bin_chi_merge(p_df, p_var, p_target):
-    """
-    ChiMerge分箱法
-    :param p_df:
-    :param p_var:
-    :param p_target:
-    :return:
-    """
-    return
 
 
 
