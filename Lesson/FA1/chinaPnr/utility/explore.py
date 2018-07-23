@@ -1,3 +1,7 @@
+#! /usr/bin/env python
+# -*- coding:utf-8 -*-
+
+
 # Index
 # ----------------------------------------
 # get_list_for_number_str_col 将dataframe中的字段名称分为字符型、数值型两个list返回
@@ -231,5 +235,18 @@ def missing_continuous(p_df, p_var_list, p_file=""):
     return dict_mis
 
 
+def max_bin_pcnt(p_df, col):
+    """
+    计算各个类别的占比
+    :param p_df:
+    :param col:
+    :return:
+    """
+    n = p_df.shape[0]
+    total = p_df.groupby([col])[col].count()
+    pcnt = total*1.0/n
+    pcnt.sort_values(inplace=True)
+    print("function max_bin_pcnt finished!...................")
+    return pcnt
 
 

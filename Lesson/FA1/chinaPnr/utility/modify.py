@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
 # Index
 # ----------------------------------------
 # makeup_miss_for_num        按照指定的方法对数据集的数字类型数据进行填充
@@ -11,7 +14,7 @@ import numpy as np
 import pandas as pd
 
 
-def makeup_miss_for_num(p_df, p_var_list, p_method):
+def makeup_num_miss(p_df, p_var_list, p_method):
     """
     按照指定的方法对数据集的数字类型数据进行填充
     :param p_df:数据集
@@ -31,13 +34,13 @@ def makeup_miss_for_num(p_df, p_var_list, p_method):
         return
 
     for col in set(p_var_list):
-        makeup_miss_for_1_num(p_df, col, p_method)
+        makeup_num_miss_for_1(p_df, col, p_method)
 
     print("function makeup_miss_for_num finished!...................")
 
 
 
-def makeup_miss_for_1_num(p_df, p_var, p_method):
+def makeup_num_miss_for_1(p_df, p_var, p_method):
     """
     按照指定的方法对数据集的指定列数字类型数据进行填充
     :param p_df:数据集
@@ -76,7 +79,7 @@ def makeup_miss_for_1_num(p_df, p_var, p_method):
     print("function makeup_miss_for_1_num("+p_var+") finished!...................")
 
 
-def makeup_miss_for_str(p_df, p_str_var_list, p_method):
+def makeup_str_miss(p_df, p_str_var_list, p_method):
     """
     按照指定的方法对数据集的字符串类型数据进行填充
     :param p_df: 数据集
@@ -90,12 +93,12 @@ def makeup_miss_for_str(p_df, p_str_var_list, p_method):
         return
 
     for var in p_str_var_list:
-        makeup_miss_for_1_str(p_df, var, p_method)
+        makeup_str_miss_for_1(p_df, var, p_method)
 
     print("function makeup_miss_for_str finished!...................")
 
 
-def makeup_miss_for_1_str(p_df, p_var, p_method):
+def makeup_str_miss_for_1(p_df, p_var, p_method):
     """
     按照指定的方法对数据集的指定列字符串类型数据进行填充
     :param p_df: 数据集
@@ -134,7 +137,7 @@ def makeup_miss_for_1_str(p_df, p_var, p_method):
 
 def density_encoder_for_1(p_df, p_var, p_target):
     """
-    对类别变量进行密度编码 包括Nan
+    对类别变量进行浓度编码 包括Nan
     :param p_df: 数据集
     :param p_var: 要分析的类别型变量的变量名
     :param p_target: 响应变量名
@@ -193,7 +196,15 @@ def standard_std(p_df, p_var, p_target):
     return
 
 
-
+def bin_best_ks(p_df, p_var, p_target):
+    """
+    ks分箱法 不推荐
+    :param p_df:
+    :param p_var:
+    :param p_target:
+    :return:
+    """
+    return
 
 
 

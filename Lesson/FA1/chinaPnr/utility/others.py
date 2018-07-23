@@ -1,3 +1,7 @@
+#! /usr/bin/env python
+# -*- coding:utf-8 -*-
+
+
 # Index
 # ----------------------------------------
 # create_path     创建文件夹
