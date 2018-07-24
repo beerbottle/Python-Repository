@@ -6,6 +6,7 @@ import random
 import pandas as pd
 import matplotlib.pyplot as plt
 from pandas.plotting import scatter_matrix
+import datetime
 import chinaPnr.utility.explore as u_explore
 import chinaPnr.utility.modify as u_modify
 import chinaPnr.utility.others as u_others
@@ -17,6 +18,7 @@ import chinaPnr.utility.assess as u_assess
 # import numbers
 # import numpy as np
 # from matplotlib import pyplot
+
 
 
 if __name__ == '__main__':
@@ -81,10 +83,17 @@ if __name__ == '__main__':
     data1 = pd.read_csv('PPD_LogInfo_3_1_Training_Set.csv', header=0)
     data2 = pd.read_csv('PPD_Training_Master_GBK_3_1_Training_Set.csv', header=0, encoding='gbk')
     data3 = pd.read_csv('PPD_Userupdate_Info_3_1_Training_Set.csv', header=0)
-
+    data2.head(5)
+    data2.columns
     data2['city_match'] = data2.apply(lambda x: int(x.UserInfo_2 == x.UserInfo_4 == x.UserInfo_8 == x.UserInfo_20),
                                       axis=1)
     del data2['UserInfo_2']
     del data2['UserInfo_4']
     del data2['UserInfo_8']
     del data2['UserInfo_20']
+    data1['logInfo'] = data1['LogInfo3'].map(lambda x: datetime.datetime.strptime(x,'%Y-%m-%d'))
+    data1['Listinginfo'] = data1['Listinginfo1'].map(lambda x: datetime.datetime.strptime(x,'%Y-%m-%d'))
+    data1['ListingGap'] = data1[['logInfo','Listinginfo']].apply(lambda x: (x[1]-x[0]).days,axis = 1)
+
+    timeWindows = u_explore.time_window_selection(data1, 'ListingGap', range(30, 361, 30))
+
